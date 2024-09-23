@@ -5,7 +5,7 @@
 
 ### Control de Gastos Mensuales
 
-Crearemos una aplicación de control de gastos mensuales con **Javascript**,
+Crearemos una aplicación de control de gastos mensuales con **Javascript**
 
 [**Clase grabada en Youtube**](https://www.youtube.com/watch?v=xV0S3unq4Sw&t=384s)
 
