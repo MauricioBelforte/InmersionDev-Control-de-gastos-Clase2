@@ -8,17 +8,22 @@ const arregloGastos = [
 ]
 
 function clickBoton() {
-    const inputNombreGasto = document.getElementById("nombreGasto")
-    const inputValorGasto = document.getElementById("valorGasto")
+    const inputNombreGasto = document.getElementById("nombreGasto");
+    const inputValorGasto = document.getElementById("valorGasto");
+    const inputDescripcionGasto = document.getElementById("descripcionGasto");
+
     let gasto;
 
     nombreGasto = inputNombreGasto.value;
     valorGasto = parseFloat(inputValorGasto.value);
+    descripcionGasto = inputDescripcionGasto.value;
 
-    gasto = { nombre: nombreGasto, valor: valorGasto };
+    alertaGastoElevado(valorGasto);
+    gasto = { nombre: nombreGasto, valor: valorGasto, descripcion: descripcionGasto };
 
     console.log(valorGasto);
     console.log(gasto);
+
 
     arregloGastos.push(gasto);
 
@@ -39,7 +44,7 @@ function actualizarListaGastos() {
     let listaHTML = '';
     let totalGastos = 0;
     arregloGastos.forEach((cadaGasto, indice) => {
-        listaHTML = listaHTML + `<li>${cadaGasto.nombre}: $${cadaGasto.valor} <button onclick="botonEliminarGasto(${indice})">Eliminar </button> </li>`;
+        listaHTML = listaHTML + `<li><p>${cadaGasto.nombre}: $${cadaGasto.valor}</p> <span>Descripcion: ${cadaGasto.descripcion}</span><button onclick="botonEliminarGasto(${indice})">Eliminar </button> </li>`;
         totalGastos = totalGastos + cadaGasto.valor;
     })
 
@@ -54,7 +59,7 @@ function limpiar() {
 
     document.getElementById("nombreGasto").value = '';
     document.getElementById("valorGasto").value = '';
-
+    document.getElementById("descripcionGasto").value = '';
 
 }
 
@@ -65,3 +70,14 @@ function botonEliminarGasto(indice) {
         actualizarListaGastos(); // Actualizar la lista después de eliminar un gasto
     }
 }
+
+
+
+function alertaGastoElevado(gasto) {
+    if (gasto > 150) {
+        alert("El gasto es elevado. Valor: $" + gasto)
+    }
+
+}
+
+

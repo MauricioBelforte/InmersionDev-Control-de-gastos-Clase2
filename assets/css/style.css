@@ -49,11 +49,24 @@ ul {
 }
 
 ul li {
-    padding: 10px;
+    
+    padding: 20px;
     background-color: #041832;
     border-bottom: 1px solid #eee;
     display: flex;
     justify-content: space-between;
+    font-size: 2rem;
+}
+
+ul li span{
+    font-size: 1.2rem;
+    padding: 30px; 
+}
+
+ul li p{
+    width: 30%;
+    font-size: 2rem;
+    padding: 10px; 
 }
 
 ul li:last-child {
@@ -63,11 +76,11 @@ ul li:last-child {
 .main-container {
     display: flex;
     justify-content: center;
-    top: 110px;
+   /*  top: 110px;
     left: 120px;
-    width: 1200px;
+    width: 1200px; */
     min-height: 80vh;
-    margin: 0px auto;
+    margin: 0px 20px;
     padding: 20px;
     background: linear-gradient(0deg, rgba(20, 68, 128, 0.3), rgba(20, 68, 128, 0.3)),
         linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));
@@ -81,7 +94,7 @@ ul li:last-child {
 .container {
     display: flex;
     gap: 45px;
-    width: 860px;
+    width:90%;
     align-items: center;
     flex-direction: column;
     padding: 45px;
