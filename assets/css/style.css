@@ -24,6 +24,7 @@ input[type="number"] {
 }
 
 button {
+    margin: 10px;
     padding: 10px 40px;
     width: fit-content;
     background-color: #1875E8;
@@ -59,12 +60,13 @@ ul li {
 }
 
 ul li span{
+    width: 50%;
     font-size: 1.2rem;
     padding: 30px; 
 }
 
 ul li p{
-    width: 30%;
+    width: 20%;
     font-size: 2rem;
     padding: 10px; 
 }
@@ -80,7 +82,7 @@ ul li:last-child {
     left: 120px;
     width: 1200px; */
     min-height: 80vh;
-    margin: 0px 20px;
+    margin:20px;
     padding: 20px;
     background: linear-gradient(0deg, rgba(20, 68, 128, 0.3), rgba(20, 68, 128, 0.3)),
         linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));

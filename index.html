@@ -18,7 +18,8 @@
                 <input type="text" id="nombreGasto" placeholder="Nombre del gasto">
                 <input type="number" id="valorGasto" placeholder="Valor del gasto" min="0" step="0.01">
                 <input type="text" id="descripcionGasto" placeholder="Descripcion del gasto">
-                <button id="botonFormulario" onclick="clickBoton();">Agregar Gasto</button>
+                <button id="botonAgregarGasto" onclick="clickAgregarGasto()">Agregar Gasto</button>
+                <button id="botonGuardarCambiosGasto" onclick="clickGuardarCambiosGasto()" style="display: none;">Guardar Cambios</button>
             </div>
             <ul id="listaDeGastos"></ul>
             <div class="total">
